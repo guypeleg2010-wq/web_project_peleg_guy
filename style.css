@@ -1,0 +1,123 @@
+﻿/*עיצוב כללי*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Merriweather", serif; 
+    background-color: #f7f7f5;
+    color: #0f172a;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    min-height: 100vh;
+}
+/*עיצוב כללי*/
+
+
+
+
+
+/*עיצוב header*/
+header {
+    margin: auto;
+    height: 75px;
+    margin-top: 10px;
+    width: 1250px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: linear-gradient(to right, #202b41, #4d689d);
+    border-bottom: 1px solid rgba(217, 181, 111, 0.3);
+}
+header:hover {
+        border-color: #d9b56f;
+        box-shadow: 0 0 12px rgba(217, 181, 111, 0.6);
+    }
+.logo {
+    width: 90px;
+    filter: drop-shadow(0 0 4px rgba(217, 181, 111, 0.25));
+}
+.nav_links {
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+}
+.nav_links a {
+        color: #f7f7f5;
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        transition: 0.3s ease;
+    }
+.nav_links a:hover {
+            color: #d9b56f;
+            text-shadow: 0 0 6px rgba(217, 181, 111, 0.6);
+        }
+.btn {
+    padding: 10px 24px;
+    background-color: #d9b56f;
+    color: #0f172a;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(217, 181, 111, 0.4);
+}
+.btn:hover {
+        background-color: #c9a458;
+        box-shadow: 0 0 16px rgba(217, 181, 111, 0.55);
+    }
+/*עיצוב header*/
+
+
+
+
+/*hero page*/
+
+
+/*hero page*/
+
+
+
+
+
+/*עיצוב footer*/
+footer {
+    height: 200px;
+    background: linear-gradient(to right, #202b41, #4d689d);
+    display: flex;
+    flex-direction: column;
+    
+}
+.social img{
+        display: flex;
+        width: 35px;
+        
+        
+    }
+.social {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.nav_links{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#right {
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+/*עיצוב footer*/
+
