@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Merriweather", serif; 
+    font-family: "Merriweather", serif;
     background-color: #f7f7f5;
     color: #0f172a;
     display: flex;
@@ -14,18 +14,21 @@ body {
 main {
     flex: 1;
     min-height: 100vh;
+    background: linear-gradient(to left, #202b41, #1b1b1b);
 }
 /*עיצוב כללי*/
 
 
-
-
-
 /*עיצוב header*/
 header {
+    position: fixed;
+    top: 23px;
+    z-index: 10;
+    transform: translateX(50%);
+    right: 50%;
     margin: auto;
     height: 75px;
-    margin-top: 10px;
+    margin-top: 25px;
     width: 1250px;
     border-radius: 50px;
     display: flex;
@@ -34,6 +37,7 @@ header {
     padding: 22px 8%;
     background: linear-gradient(to right, #202b41, #4d689d);
     border-bottom: 1px solid rgba(217, 181, 111, 0.3);
+    box-shadow: 0px -2px 2px rgba(34,34,34,0.6);
 }
 header:hover {
         border-color: #d9b56f;
@@ -77,25 +81,206 @@ header:hover {
 /*עיצוב header*/
 
 
-
-
 /*hero page*/
+.hero {
+    position: relative;
+    display: flex;
+    background: linear-gradient(to left, #202b41, #1b1b1b);
+    width: 100%;
+    height: 100%;
+    border-bottom: solid #d9b56f40;
+}
+.hero_img img{
+    height:100%;
+    padding-right: 300px;
 
-
-/*hero page*/
-
-
-
-
-
-/*עיצוב footer*/
-footer {
-    height: 200px;
-    background: linear-gradient(to right, #202b41, #4d689d);
+}
+.hero_wrap{
+    display:flex;
+    justify-content: space-between;
+}
+.h100 {
+    height: 100%;
+}
+hero_img h100 {
+    display: flex;
+    justify-content: space-between;
+}
+.hero_text {
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    
+    color: aliceblue;
+    font-size: 85px;
+    gap: 30px;
+    top: 166px;
 }
+.mirror{
+    transform: scaleX(-1);
+}
+.line_1{
+    align-self: flex-start;
+}
+.line_2{
+    align-self: center;
+}
+.line_3{
+    align-self: flex-end;
+}
+.line_1:hover {
+    color: #d9b56f;
+    text-shadow: 0 0 6px rgba(217, 181, 111, 0.6);
+    transform: scale(1.07);
+    transition: 0.75s;
+}
+.line_2:hover {
+    color: #d9b56f;
+    text-shadow: 0 0 6px rgba(217, 181, 111, 0.6);
+    transform: scale(1.07);
+    transition: 0.75s;
+}
+.line_3:hover {
+    color: #d9b56f;
+    text-shadow: 0 0 6px rgba(217, 181, 111, 0.6);
+    transform: scale(1.07);
+    transition: 0.75s;
+}
+.btn_portal {
+    position: absolute;
+    font-size: 45px;
+    top: 72%;
+    right: 45%;
+    padding: 10px 24px;
+    background-color: #d9b56f;
+    color: #0f172a;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(217, 181, 111, 0.4);
+}
+   .btn_portal:hover {
+        background-color: #c9a458;
+        box-shadow: 0 0 16px rgba(217, 181, 111, 0.55);
+        transform: scale(1.07);
+        transition: 0.3s;
+    }
+/*hero page*/
+
+/*main עיצוב*/
+.section_1 {
+    border-bottom: solid #d9b56f40;
+}
+.container {
+    height: 100%;
+    width: 92%;
+    margin: auto;
+    margin-top: 175px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+.profile {
+    border: #c9a458;
+    display: flex;
+    flex-direction: column;
+    /*    justify-content: space-between;*/
+    align-items: center;
+    gap: 22px;
+}
+.profile:hover {
+        transform: scale(1.07);
+        transition: 0.3s;
+    }
+.profile_img img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+.profile_text p {
+    font-size: 25px;
+    color: white;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+.profile_text {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    /*    line-height: 2.5;*/
+}
+.block {
+    animation: appear both;
+    animation-timeline: view(75% 20%);
+}
+@keyframes appear {
+    from {
+        opacity: 0.5;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+.main_animated{
+    display: flex;
+    justify-content: space-between;
+}
+.left_animated img {
+    transform: scaleX(-1);
+}
+.section_2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 215px;
+}
+.left_animated img {
+    transform: scaleX(-1);
+    animation: move_item_left both;
+    animation-timeline: view(75% 20%);
+}
+@keyframes move_item_left {
+    from {
+        transform: scaleX(-1) translateX(500px) scale(0.5);
+    }
+
+    to {
+        transform: scaleX(-1) translateX(0) scale(1);
+    }
+}
+.right_animated img {
+    animation: move_item_right both;
+    animation-timeline: view(75% 20%);
+}
+@keyframes move_item_right{
+    from {
+        transform:translateX(500px) scale(0.5);
+    }
+    to {
+        transform: translateX(0) scale(1)
+    }
+}
+.main_qoute {
+    padding-top: 284px;
+    width: 495px;
+}
+    .main_qoute p {
+        font-size: 85px;
+    }
+    /*main עיצוב*/
+    /*עיצוב footer*/
+    footer {
+        height: 200px;
+        background: linear-gradient(to right, #202b41, #4d689d);
+        display: flex;
+        flex-direction: column;
+    }
 .social img{
         display: flex;
         width: 35px;
@@ -119,5 +304,30 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+
+
+
+
 /*עיצוב footer*/
+/*תוכן אמיתי*/
+/*תוכן אמיתי*/
+/*chat gpt help*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero_text p {
+    animation: fadeInUp 1.8s ease forwards;
+}
+/*chat gpt help*/
+
+
 
