@@ -7,21 +7,21 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "אתר מדעי המחשב 
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_64131"
-		Debug.AspNetCompiler.PhysicalPath = "..\אתר מדעי המחשב - פילוסופיה\"
+		Debug.AspNetCompiler.PhysicalPath = "..\‏‏אתר מדעי המחשב - פילוסופיה - עותק\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64131\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_64131"
-		Release.AspNetCompiler.PhysicalPath = "..\אתר מדעי המחשב - פילוסופיה\"
+		Release.AspNetCompiler.PhysicalPath = "..\‏‏אתר מדעי המחשב - פילוסופיה - עותק\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64131\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "64131"
-		SlnRelativePath = "..\אתר מדעי המחשב - פילוסופיה\"
+		SlnRelativePath = "..\‏‏אתר מדעי המחשב - פילוסופיה - עותק\"
 	EndProjectSection
 EndProject
 Global
