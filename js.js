@@ -1,62 +1,48 @@
+function verifyAndSend() {
 
+    var username  = document.getElementById('username').value;
+    var email     = document.getElementById('email').value;
+    var telephone = document.getElementById('telephone').value;
+    var age       = Number(document.getElementById('age').value);
+    var id        = document.getElementById('id').value;
 
-function verifyuser() {
-
-        let flag = true
-    let username = document.querySelector('#username').value
-    let email = document.querySelector('#email').value
-    let telephone = document.querySelector('#telephone').value
-    let id = document.querySelector('#id').value
-    let age = Number(document.querySelector('#age').value)
-
-
-    if (age < 18 || age > 120)
-    {
-        alert('גילך לא מתאים!')
-        flag = false
-        return
+    // בדיקות תקינות
+    if (username.length < 5) {
+        alert('שם משתמש חייב להכיל לפחות 5 תווים!');
+        return;
+    }
+    if (age < 18 || age > 120) {
+        alert('גיל חייב להיות בין 18 ל-120!');
+        return;
+    }
+    if (id.length !== 9) {
+        alert('תעודת זהות חייבת להכיל 9 ספרות!');
+        return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert('כתובת אימייל לא חוקית!');
+        return;
+    }
+    if (telephone.length !== 10) {
+        alert('מספר טלפון חייב להכיל 10 ספרות!');
+        return;
     }
 
-    if (id.length != 9)
-    {
-        alert('תעודת זהות שגויה!')
-        flag = false
-        return
+    // כל הנתונים תקינים - הדפסה לקונסול
+    console.log("נתוני המשתמש:");
+    console.log("שם משתמש: " + username);
+    console.log("אימייל: " + email);
+    console.log("טלפון: " + telephone);
+    console.log("גיל: " + age);
+    console.log("תעודת זהות: " + id);
 
-    }
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email))
-    {
-        alert("כתובת אימייל לא חוקית");
-        flag = false
-        return
-    }
-
-    if (telephone.length != 10)
-    {
-        alert('מספר טלפון לא מזוהה!')
-        flag = false
-        return
-    }
-
-    if (username.length < 5)
-    {
-        alert('אורך שם משתמש חייב להיות גדול מ-5!')
-        flag = false
-        return
-    }
-
-    if (flag)
-    {
-        alert('ההרשמה בוצעה בהצלחה!')
-        console.log({
-            username: username,
-            email: email,
-            telephone: telephone,
-            id: id,
-            age: age
-        });
-};
+    // שליחת POST לשרת
+    fetch("http://localhost:3000/post", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username: username, email: email, telephone: telephone, age: age, id: id })
+    })
+    .then(function(res) { return res.text(); })
+    .then(function(data) { alert(data); })
+    .catch(function(err) { console.log("שגיאה: " + err); });
 }
-    

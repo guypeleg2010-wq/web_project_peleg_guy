@@ -1,4 +1,4 @@
-﻿/*עיצוב כללי*/
+/*עיצוב כללי*/
 * {
     margin: 0;
     padding: 0;
@@ -40,9 +40,9 @@ header {
     box-shadow: 0px -2px 2px rgba(34,34,34,0.6);
 }
 header:hover {
-        border-color: #d9b56f;
-        box-shadow: 0 0 12px rgba(217, 181, 111, 0.6);
-    }
+    border-color: #d9b56f;
+    box-shadow: 0 0 12px rgba(217, 181, 111, 0.6);
+}
 .logo {
     width: 90px;
     filter: drop-shadow(0 0 4px rgba(217, 181, 111, 0.25));
@@ -53,17 +53,17 @@ header:hover {
     list-style: none;
 }
 .nav_links a {
-        color: #f7f7f5;
-        font-size: 1.1rem;
-        text-decoration: none;
-        font-weight: 500;
-        letter-spacing: 0.4px;
-        transition: 0.3s ease;
-    }
+    color: #f7f7f5;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    transition: 0.3s ease;
+}
 .nav_links a:hover {
-            color: #d9b56f;
-            text-shadow: 0 0 6px rgba(217, 181, 111, 0.6);
-        }
+    color: #d9b56f;
+    text-shadow: 0 0 6px rgba(217, 181, 111, 0.6);
+}
 .btn {
     padding: 10px 24px;
     background-color: #d9b56f;
@@ -75,9 +75,9 @@ header:hover {
     box-shadow: 0 0 10px rgba(217, 181, 111, 0.4);
 }
 .btn:hover {
-        background-color: #c9a458;
-        box-shadow: 0 0 16px rgba(217, 181, 111, 0.55);
-    }
+    background-color: #c9a458;
+    box-shadow: 0 0 16px rgba(217, 181, 111, 0.55);
+}
 /*עיצוב header*/
 
 
@@ -93,7 +93,6 @@ header:hover {
 .hero_img img{
     height:100%;
     padding-right: 300px;
-
 }
 .hero_wrap{
     display:flex;
@@ -159,12 +158,12 @@ hero_img h100 {
     transition: 0.3s ease;
     box-shadow: 0 0 10px rgba(217, 181, 111, 0.4);
 }
-   .btn_portal:hover {
-        background-color: #c9a458;
-        box-shadow: 0 0 16px rgba(217, 181, 111, 0.55);
-        transform: scale(1.07);
-        transition: 0.3s;
-    }
+.btn_portal:hover {
+    background-color: #c9a458;
+    box-shadow: 0 0 16px rgba(217, 181, 111, 0.55);
+    transform: scale(1.07);
+    transition: 0.3s;
+}
 /*hero page*/
 
 /*section 1*/
@@ -186,14 +185,13 @@ hero_img h100 {
     border: #c9a458;
     display: flex;
     flex-direction: column;
-    /*    justify-content: space-between;*/
     align-items: center;
     gap: 22px;
 }
 .profile:hover {
-        transform: scale(1.07);
-        transition: 0.3s;
-    }
+    transform: scale(1.07);
+    transition: 0.3s;
+}
 .profile_img img {
     width: 300px;
     height: 450px;
@@ -210,9 +208,7 @@ hero_img h100 {
 .profile_text {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row-reverse; */
     justify-content: center;
-    /*    line-height: 2.5;*/
 }
 .block {
     animation: appear both;
@@ -248,9 +244,9 @@ hero_img h100 {
     padding-top: 284px;
     width: 495px;
 }
-    .main_qoute p {
-        font-size: 85px;
-    }
+.main_qoute p {
+    font-size: 85px;
+}
 
 /*section 3*/
 .section_3 {
@@ -270,7 +266,6 @@ div.container.block {
 }
 .book_info h1 {
     color: #c9a458;
-    ;
     font-size: 20px;
 }
 .book_info p {
@@ -282,13 +277,13 @@ div.container.block {
     width: 318.12px;
     justify-content: space-between;
     flex-direction: row-reverse;
-} 
+}
 .more_info p {
-        color: white;
-    }
+    color: white;
+}
 .more_info img {
-        width: 30px;
-    }
+    width: 30px;
+}
 .wrap_books{
     display: flex;
     justify-content: space-evenly;
@@ -307,12 +302,12 @@ div.container.block {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .title h1 {
     color: #d9b56f;
     font-size: 30px;
     padding-top: 20px;
+    padding-bottom: 45px;
 }
 .row1 {
     display: flex;
@@ -322,7 +317,6 @@ div.container.block {
 .row2 {
     display: flex;
     gap: 35px;
-    ;
     padding-bottom: 100px;
 }
 .services_icon{
@@ -337,17 +331,16 @@ div.container.block {
     padding: 30px;
     background: linear-gradient(to left, #202b41, #4d689d);
 }
-    .services_profile p, h1{
-        color: white;
-        text-align: center;
-    }
+.services_profile p, h1{
+    color: white;
+    text-align: center;
+}
 .services_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
-
 .services_profile {
     width: calc(33.333% - 20px);
     box-sizing: border-box;
@@ -355,22 +348,17 @@ div.container.block {
 }
 
 
-
-
-
-    /*עיצוב footer*/
-    footer {
-        height: 200px;
-        background: linear-gradient(to right, #202b41, #4d689d);
-        display: flex;
-        flex-direction: column;
-    }
+/*עיצוב footer*/
+footer {
+    height: 200px;
+    background: linear-gradient(to right, #202b41, #4d689d);
+    display: flex;
+    flex-direction: column;
+}
 .social img{
-        display: flex;
-        width: 35px;
-        
-        
-    }
+    display: flex;
+    width: 35px;
+}
 .social {
     padding: 20px;
     display: flex;
@@ -391,18 +379,12 @@ div.container.block {
 /*עיצוב footer*/
 
 
-
-/*תוכן אמיתי*/
-/*תוכן אמיתי*/
-
-
 /*chat gpt help*/
 @keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -414,6 +396,56 @@ div.container.block {
 /*chat gpt help*/
 
 
+/*עיצוב טופס contact*/
+.signup_wrap {
+    display: flex;
+    justify-content: center;
+}
 
+#myForm {
+    background-color: #1e2d45;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+    border: 1px solid rgba(217, 181, 111, 0.3);
+}
 
+#myForm h2 {
+    color: #d9b56f;
+    margin-bottom: 10px;
+}
 
+#myForm input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(217, 181, 111, 0.4);
+    border-radius: 6px;
+    background-color: #202b41;
+    color: white;
+    font-size: 14px;
+}
+
+#myForm input::placeholder {
+    color: #8a8a8a;
+}
+
+#myForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d9b56f;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#myForm button:hover {
+    background-color: #c9a458;
+    box-shadow: 0 0 16px rgba(217, 181, 111, 0.55);
+}
+/*עיצוב טופס contact*/
